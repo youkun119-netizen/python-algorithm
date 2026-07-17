@@ -3,7 +3,10 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120854
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 17. 21:15:33
+# 작성일: 2026. 07. 17. 21:17:53
 
 def solution(strlist):
-    return[len(word) for word in strlist]
+    answer = []
+    for word in strlist:
+        answer.append(len(word))
+    return answer
