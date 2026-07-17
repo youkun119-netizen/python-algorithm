@@ -3,10 +3,7 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120908
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 17. 21:28:25
+# 작성일: 2026. 07. 17. 21:29:24
 
 def solution(str1, str2):
-    if str2 in str1:
-        return 1
-    else:
-        return 2
+    return 1 if str2 in str1 else 2
