@@ -3,7 +3,13 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120851
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 18. 17:52:40
+# 작성일: 2026. 07. 18. 17:55:40
 
 def solution(my_string):
-    return sum(int(i) for i in my_string if i.isdigit())
+    answer = 0
+    for i in my_string:
+        try:
+            answer += int(i)
+        except:
+            pass
+    return answer
