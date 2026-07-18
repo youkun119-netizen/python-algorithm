@@ -3,11 +3,7 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120826
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 18. 16:26:57
+# 작성일: 2026. 07. 18. 16:28:10
 
 def solution(my_string, letter):
-    answer = ''
-    for char in my_string:
-        if char != letter:
-            answer += char
-    return answer
+    return ''.join([i for i in my_string if i != letter])
