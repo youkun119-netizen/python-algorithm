@@ -3,9 +3,7 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120811
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 18. 18:53:36
+# 작성일: 2026. 07. 18. 19:28:18
 
 def solution(array):
-    array.sort()
-    mid_index = len(array)//2
-    return array[mid_index]
+    return sorted(array)[len(array)//2]
