@@ -3,12 +3,7 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120888
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 19. 22:32:50
+# 작성일: 2026. 07. 19. 22:34:47
 
 def solution(my_string):
-    answer = ''
-    for char in my_string:
-        if char not in answer:
-            answer += char
-    return answer
-    
+    return ''.join(dict.fromkeys(my_string))
