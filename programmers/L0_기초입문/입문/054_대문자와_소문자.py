@@ -3,7 +3,13 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120893
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 07. 19. 16:41:40
+# 작성일: 2026. 07. 19. 16:49:26
 
 def solution(my_string):
-    return my_string.swapcase()
+    answer = []
+    for i in my_string:
+        if i.isupper():
+            answer.append(i.lower())
+        else:
+            answer.append(i.upper())
+    return ''.join(answer)
