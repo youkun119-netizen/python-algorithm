@@ -3,21 +3,16 @@
 # 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/120852
 # 알고리즘: 기초
 # 작성자: 학생
-# 작성일: 2026. 08. 08. 18:01:20
+# 작성일: 2026. 08. 08. 18:17:27
 
 def solution(n):
-    factors = set()
-    if n % 2 == 0:
-        factors.add(2)
-        while n % 2 == 0:
-            n //= 2 # n // 2와 동일
-    i = 3
-    while i * i <= n:
-        if n % i == 0:
-            factors.add(i)
-            while n % i == 0:
-                n //= i
-        i += 2
-    if n > 2:
-        factors.add(n)
-    return sorted(list(factors))  
+    answer = []
+    d = 2
+    while d <= n:
+        if n % d == 0:
+            n /= d
+            if d not in answer:
+                answer.append(d)
+        else:
+            d += 1
+    return answer
